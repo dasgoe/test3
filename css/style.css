@@ -101,6 +101,9 @@ p{ margin: 0 0 1em; }
   text-decoration:none;
   letter-spacing: -0.01em;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: .55rem;
 }
 .brand .accent{ color: var(--ember); }
 .nav-links{
@@ -424,4 +427,62 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior:auto; }
+}
+
+/* ---------- handgetekende badges (Canva-assets) ----------
+   Deze PNG's dragen GEEN unieke tekst die nergens anders als
+   echte HTML-tekst staat -- ze zijn decoratief naast een bestaande
+   kop/label, met alt="" waar de tekst identiek is aan wat ernaast
+   al leesbaar staat. Zo blijft alles crawlebaar/toegankelijk terwijl
+   de eigen visuele stijl behouden blijft. */
+.brand-logo-img{
+  height: 44px;
+  width: auto;
+  display: block;
+}
+.badge{
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+.badge-sm{
+  max-width: 130px;
+}
+.badge-row{
+  display:flex;
+  justify-content:center;
+  margin-bottom: 1rem;
+}
+.badge-row.left{ justify-content:flex-start; }
+.hero .badge-row{ justify-content:flex-start; margin-bottom: 1.2rem; }
+.hero-inner .badge{ max-width: 190px; }
+.footer-badge{
+  display:inline-block;
+  vertical-align: middle;
+  width: 92px;
+  height: auto;
+  margin-left: .4rem;
+}
+
+/* ---------- portret (echte foto, geen badge) ---------- */
+.portrait-float{
+  display: block;
+  width: 200px;
+  border-radius: var(--radius);
+  border: 3px solid var(--gold);
+  margin: 0 auto 1.5rem;
+}
+@media (min-width: 720px){
+  .portrait-float{
+    float: left;
+    width: 240px;
+    margin: .3rem 2rem 1rem 0;
+    shape-outside: margin-box;
+  }
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
 }
