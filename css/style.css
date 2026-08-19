@@ -1,8 +1,9 @@
 /* ===========================================================
-   DAS GOE — design tokens, v3
-   Kleurenschema C — "Zonnig & toegankelijk": licht en warm,
-   coral + mosterd, donker enkel nog in de footer. Contrast
-   berekend en getoetst aan WCAG AA/AAA (zie README).
+   DAS GOE — design tokens, v4
+   Kleurenschema 9 — "Krijtbord & stift": warm chalkboard-groen,
+   marker-oranje en krijtgeel. Sluit aan bij de eigen handgetekende
+   correctie-bubbels (marker op bord). Contrast berekend en getoetst
+   aan WCAG AA (zie README/checklist bij deze levering).
    Signatuur: handgetekende "correctie"-bubbels — een knipoog
    naar "fouten vieren, perfectie is niet de poort".
 
@@ -11,23 +12,23 @@
    =========================================================== */
 
 :root{
-  /* kleur — basis */
-  --paper:      #FFFBF2;
-  --paper-soft: #FFFDF8;
-  --tint:       #FBEAD3;
-  --ink:        #3A2E22;
+  /* kleur — basis (palet 9: Krijtbord & stift) */
+  --paper:      #FBF6EA;
+  --paper-soft: #FFFDF6;
+  --tint:       #EDE8D2;
+  --ink:        #3D4A35;
 
   /* kleur — accenten */
-  --coral:      #B84325;
-  --coral-light:#E2603A;
-  --mustard:    #E8A23D;
-  --mustard-text:#8A5A16;
+  --coral:      #B84E24;
+  --coral-light:#E8734A;
+  --mustard:    #F0C94E;
+  --mustard-text:#8C6A0E;
 
   /* kleur — enige overgebleven donkere vlak: footer/slot-CTA */
-  --deep:       #3A2418;
+  --deep:       #2A3324;
 
-  --line-soft:  rgba(58,46,34,.14);
-  --line-dark:  rgba(255,251,242,.18);
+  --line-soft:  rgba(61,74,53,.14);
+  --line-dark:  rgba(251,246,234,.18);
 
   /* type */
   --font-display: 'Fraunces', Georgia, serif;
