@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le guide 80/20 — Das Goe</title>
+<meta name="description" content="Les mots et phrases qui comptent vraiment pour oser parler néerlandais, sans grammaire à apprendre par cœur. Guide PDF téléchargeable, 29€.">
+<link rel="canonical" href="https://dasgoe.be/guide.html">
+<meta property="og:title" content="Le guide 80/20 — Das Goe">
+<meta property="og:description" content="Pas toute la grammaire. Juste les 20% de mots et phrases qui reviennent dans 80% des conversations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dasgoe.be/guide.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Le guide 80/20 — Das Goe",
+  "description": "Guide PDF téléchargeable reprenant les mots et phrases les plus utiles pour oser parler néerlandais au quotidien, sans grammaire à apprendre par cœur.",
+  "brand": { "@type": "Brand", "name": "Das Goe" },
+  "offers": {
+    "@type": "Offer",
+    "price": "29",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dasgoe.be/guide.html"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Je débute vraiment de zéro, ce guide est-il pour moi ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Le guide part du principe que tu ne connais rien par cœur. Chaque mot ou phrase est classé par situation concrète, pas par niveau scolaire." }
+    },
+    {
+      "@type": "Question",
+      "name": "C'est écrit en néerlandais ou en français ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Les deux, côte à côte : le mot ou la phrase en néerlandais, la traduction en français juste à côté, et une indication de prononciation simple." }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment je reçois le guide après l'achat ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tu reçois le PDF par e-mail directement après ton achat. Tu peux le lire sur ton téléphone, l'imprimer, le glisser dans ton sac pour la prochaine balade." }
+    },
+    {
+      "@type": "Question",
+      "name": "Le guide remplace-t-il les cours ou les balades ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Non. Le guide te donne la matière première, mais c'est en parlant avec quelqu'un, en cours ou en balade, que la parole se débloque vraiment. Le guide est ce que tu emportes avec toi entre deux séances." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">Das <span class="accent">Goe</span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="qui-quoi.html">Qui-Quoi</a></li>
+        <li><a href="balades.html">Balades</a></li>
+        <li><a href="cours-en-ligne.html">Cours en ligne</a></li>
+        <li><a href="guide.html" aria-current="page">Le guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#acheter" class="nav-cta">J'achète le guide</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-panel">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-panel wrap" id="mobile-panel">
+    <a href="index.html">Accueil</a>
+    <a href="qui-quoi.html">Qui-Quoi</a>
+    <a href="balades.html">Balades</a>
+    <a href="cours-en-ligne.html">Cours en ligne</a>
+    <a href="guide.html">Le guide</a>
+    <a href="contact.html">Contact</a>
+    <a href="#acheter" class="btn btn-primary">J'achète le guide</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Das Goe — Le guide 80/20</p>
+      <h1>Tu veux réviser un peu, mais tu ne sais pas quoi apprendre par cœur&nbsp;?</h1>
+      <p class="lede">Normal. La plupart des méthodes te donnent 100% du vocabulaire — grammaire, exceptions, listes interminables. Toi, pour oser parler, t'as juste besoin des <span class="scribble">20% qui reviennent tout le temps</span>.</p>
+      <p class="fine">C'est exactement ce que ce guide te donne. Rien de plus.</p>
+    </div>
+  </section>
+
+  <section class="section-paper">
+    <div class="wrap lead-block">
+      <h2>Goe lezen</h2>
+      <p>Pas un manuel scolaire. Pas une grammaire complète que tu n'ouvriras jamais deux fois.</p>
+      <p>Le guide 80/20 reprend uniquement les mots et les phrases qui reviennent vraiment dans une conversation du quotidien — celles que j'utilise moi-même, dans chaque langue que j'ai apprise sur le tas, au Pérou, en Ukraine, en Chine. Pas la théorie apprise en classe. Ce qui sert concrètement à se débrouiller, tout de suite.</p>
+
+      <ul class="pillars">
+        <li><strong>Classé par situation réelle</strong>Pas par thème scolaire — par ce qui t'arrive vraiment (se présenter, commander, papoter, dire que t'as pas compris).</li>
+        <li><strong>Zéro règle de grammaire à apprendre par cœur</strong>Juste ce qu'il faut savoir pour que la phrase sorte.</li>
+        <li><strong>Pensé pour être emporté</strong>Sur ton téléphone en balade, imprimé avant un cours en visio.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider" role="presentation"></div>
+
+  <section class="section-dark" id="acheter">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--gold);">Le guide</p>
+      <div class="offer-grid" style="grid-template-columns:1fr; max-width:480px;">
+        <div class="offer-card">
+          <h3>Le guide 80/20 — PDF</h3>
+          <p>Les mots et phrases essentiels pour oser parler néerlandais au quotidien, classés par situation, avec traduction et prononciation simple. À lire une fois, à garder toujours sous la main.</p>
+          <p class="price">29€ <span style="font-size:1rem; color:var(--ink); font-family:var(--font-body);">/ guide, à vie</span></p>
+          <a href="contact.html" class="btn btn-primary">J'achète le guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-paper">
+    <div class="wrap">
+      <div class="guarantee">
+        <h3>Garantie sans complications</h3>
+        <p style="margin:0; opacity:.92;">Le guide ne te convient pas&nbsp;? Écris-moi dans les 7 jours après ton achat, je te rembourse. Sans justification à donner.</p>
+        <div class="btn-row">
+          <a href="#acheter" class="btn btn-on-dark">J'achète le guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-paper" style="padding-top:0;">
+    <div class="wrap" style="max-width:70ch;">
+      <h2>Une question&nbsp;?</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Je débute vraiment de zéro, ce guide est-il pour moi&nbsp;?</summary>
+          <p>Oui. Le guide part du principe que tu ne connais rien par cœur. Chaque mot ou phrase est classé par situation concrète, pas par niveau scolaire.</p>
+        </details>
+        <details class="faq-item">
+          <summary>C'est écrit en néerlandais ou en français&nbsp;?</summary>
+          <p>Les deux, côte à côte&nbsp;: le mot ou la phrase en néerlandais, la traduction en français juste à côté, et une indication de prononciation simple.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Comment je reçois le guide après l'achat&nbsp;?</summary>
+          <p>Tu reçois le PDF par e-mail directement après ton achat. Tu peux le lire sur ton téléphone, l'imprimer, le glisser dans ton sac pour la prochaine balade.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Le guide remplace-t-il les cours ou les balades&nbsp;?</summary>
+          <p>Non. Le guide te donne la matière première, mais c'est en parlant avec quelqu'un — en cours ou en balade — que la parole se débloque vraiment. Le guide est ce que tu emportes avec toi entre deux séances.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Le guide te donne les mots. La parole, elle, se débloque en la pratiquant.</h2>
+      <p>Envie d'aller plus loin&nbsp;?</p>
+      <div class="btn-row">
+        <a href="cours-en-ligne.html#options" class="btn btn-on-dark">Voir les cours en ligne</a>
+        <a href="balades.html" class="btn btn-ghost" style="color:var(--paper-soft);">Découvrir les balades</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="brand-line">Das Goe</p>
+      <p>L'anti-méthode néerlandaise — parler d'abord, la perfection après.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="contact.html">E-mail</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <nav aria-label="Plan du site">
+      <ul style="list-style:none;padding:0;display:grid;gap:.5rem;">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-quoi.html">Qui-Quoi</a></li>
+        <li><a href="balades.html">Balades en néerlandais</a></li>
+        <li><a href="cours-en-ligne.html">Cours en ligne &amp; packs</a></li>
+        <li><a href="guide.html">Le guide 80/20</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p>© 2026 Das Goe. <a href="contact.html#mentions">Mentions légales &amp; coordonnées complètes</a>.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
