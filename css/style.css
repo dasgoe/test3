@@ -127,12 +127,14 @@ p{ margin: 0 0 1em; }
 .nav-cta{
   background: var(--ember);
   color: var(--paper-soft) !important;
-  padding: .55rem 1.1rem;
+  padding: .65rem 1.35rem;
   border-radius: var(--radius);
   text-decoration:none;
-  font-weight:600;
-  font-size:.9rem;
+  font-weight:700;
+  font-size:.92rem;
   white-space: nowrap;
+  box-shadow: 0 3px 10px rgba(193,83,31,.3);
+  margin-left: .3rem;
 }
 .nav-cta:hover{ background: var(--ink); }
 .nav-toggle{
@@ -207,24 +209,25 @@ p{ margin: 0 0 1em; }
 /* ---------- buttons ---------- */
 .btn{
   display:inline-block;
-  font-weight:600;
-  font-size: 1rem;
+  font-weight:700;
+  font-size: 1.05rem;
   text-decoration:none;
-  padding: .85rem 1.6rem;
+  padding: 1rem 2rem;
   border-radius: var(--radius);
   border: 2px solid transparent;
   cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
 }
-.btn-primary{ background: var(--ember); color: var(--paper-soft); }
-.btn-primary:hover{ background: var(--ember-light); }
-.btn-on-dark{ background: var(--gold); color: var(--forest-deep); }
-.btn-on-dark:hover{ background: var(--paper-soft); }
+.btn-primary{ background: var(--ember); color: var(--paper-soft); box-shadow: 0 4px 14px rgba(193,83,31,.35); }
+.btn-primary:hover{ background: var(--ember-light); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(193,83,31,.45); }
+.btn-on-dark{ background: var(--gold); color: var(--forest-deep); box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+.btn-on-dark:hover{ background: var(--paper-soft); transform: translateY(-1px); }
 .btn-ghost{
   background:transparent; border-color: currentColor;
   color: inherit;
 }
 .btn-ghost:hover{ background: rgba(0,0,0,.05); }
-.btn-row{ display:flex; flex-wrap:wrap; gap:.9rem; align-items:center; margin-top:1.5rem; }
+.btn-row{ display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:2rem; }
 
 /* ---------- sections ---------- */
 section{ padding-block: clamp(3rem, 5vw, 5rem); }
@@ -447,11 +450,11 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 .badge{
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 260px;
   height: auto;
 }
 .badge-sm{
-  max-width: 130px;
+  max-width: 240px;
 }
 .badge-row{
   display:flex;
@@ -459,8 +462,8 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
   margin-bottom: 1rem;
 }
 .badge-row.left{ justify-content:flex-start; }
-.hero .badge-row{ justify-content:flex-start; margin-bottom: 1.2rem; }
-.hero-inner .badge{ max-width: 190px; }
+.hero .badge-row{ justify-content:flex-start; margin-bottom: 1.5rem; }
+.hero-inner .badge{ max-width: 380px; }
 .footer-badge{
   display:inline-block;
   vertical-align: middle;
@@ -504,6 +507,20 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
   clip: rect(0,0,0,0);
   white-space: nowrap;
   border: 0;
+}
+
+/* rustpunt in lange tekstblokken -- licht een bestaande zin uit
+   i.p.v. extra tekst toe te voegen, geeft het oog een ankerpunt */
+.pull-quote{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.3rem, 1.05rem + 1vw, 1.7rem);
+  line-height: 1.35;
+  color: var(--gold);
+  border-left: 3px solid var(--ember);
+  padding: .3rem 0 .3rem 1.3rem;
+  margin: 2rem 0;
 }
 
 
