@@ -3,9 +3,13 @@
    Concept: schemering in het bos van Viroinval, kampvuur-gloed.
    Signatuur: handgetekende "correctie"-lijnen (cirkel/streep) —
    een knipoog naar "fouten vieren, perfectie is niet de poort".
-   =========================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&display=swap');
+   LET OP: het Fraunces-lettertype wordt NIET meer via @import
+   geladen (dat blokkeerde het eerste renderen met een trage
+   keten van 3 sequentiële netwerkaanvragen). Het wordt nu als
+   directe <link rel="stylesheet"> in de <head> van elke HTML-
+   pagina geladen, parallel met dit bestand. Zie index.html enz.
+   =========================================================== */
 
 :root{
   /* color */
