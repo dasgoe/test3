@@ -486,3 +486,20 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
   display: table;
   clear: both;
 }
+
+/* tekst blijft aanwezig voor crawlers/schermlezers, maar neemt geen
+   zichtbare ruimte in -- gebruikt waar een badge-afbeelding dezelfde
+   tekst al toont, zodat het niet dubbel op het scherm staat */
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
