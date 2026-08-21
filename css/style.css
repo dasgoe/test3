@@ -1,14 +1,13 @@
 /* ===========================================================
-   DAS GOE — design tokens, v4
-   Kleurenschema 9 — "Krijtbord & stift": warm chalkboard-groen,
-   marker-oranje en krijtgeel. Sluit aan bij de eigen handgetekende
-   correctie-bubbels (marker op bord). Contrast berekend en getoetst
-   aan WCAG AA (zie README/checklist bij deze levering).
+   DAS GOE — design tokens
+   Kleurenschema C — "Zonnig & toegankelijk". Contrastverhoudingen
+   berekend en getoetst aan WCAG (zie README.md voor de tabel).
    Signatuur: handgetekende "correctie"-bubbels — een knipoog
    naar "fouten vieren, perfectie is niet de poort".
 
-   Fraunces laadt via een niet-blokkerende <link> in elke HTML-
-   pagina (media=print swap-truc), niet via @import in dit bestand.
+   Geen externe lettertypes: --font-display en --font-body zijn
+   pure systeemfont-stacks (geen <link>, geen @import, geen
+   preconnect nodig — nul font-laadtijd).
    =========================================================== */
 
 :root{
