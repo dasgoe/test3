@@ -592,3 +592,33 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
   background-position: center bottom;
   background-size: 600px 170px;
 }
+
+/* ---------- cookie-consent banner (nodig sinds Clarity-analytics) ---------- */
+.cookie-banner{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 200;
+  background: var(--deep);
+  color: var(--paper-soft);
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.25);
+  display: none;
+}
+.cookie-banner.visible{ display: block; }
+.cookie-banner-inner{
+  max-width: var(--max);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+.cookie-banner p{
+  margin: 0;
+  text-align: left;
+  font-size: .9rem;
+  flex: 1 1 320px;
+}
+.cookie-banner a{ text-decoration: underline; color: var(--mustard); }
+.cookie-banner-actions{ display: flex; gap: .7rem; flex-shrink: 0; }
+.cookie-banner .btn{ padding: .6rem 1.2rem; font-size: .88rem; }
