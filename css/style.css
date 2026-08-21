@@ -142,6 +142,9 @@ li p, .eyebrow, .lede, .fine, blockquote p, .pull-quote, .price, .btn, summary, 
   border-bottom-color: var(--coral);
 }
 .nav-cta{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--coral);
   color: var(--paper-soft) !important;
   padding: .65rem 1.35rem;
@@ -149,6 +152,7 @@ li p, .eyebrow, .lede, .fine, blockquote p, .pull-quote, .price, .btn, summary, 
   text-decoration:none;
   font-weight:700;
   font-size:.92rem;
+  line-height: 1.2;
   white-space: nowrap;
   box-shadow: 0 3px 10px rgba(184,67,37,.3);
   margin-left: .3rem;
@@ -181,14 +185,6 @@ li p, .eyebrow, .lede, .fine, blockquote p, .pull-quote, .price, .btn, summary, 
   overflow:hidden;
   padding-block: clamp(3.5rem, 6vw, 6rem);
 }
-.hero::before{
-  content:"";
-  position:absolute; inset:0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%23B84325' stroke-opacity='0.10' stroke-width='1'%3E%3Cpath d='M-20 80 Q 100 20 200 80 T 420 80'/%3E%3Cpath d='M-20 140 Q 100 80 200 140 T 420 140'/%3E%3Cpath d='M-20 200 Q 100 140 200 200 T 420 200'/%3E%3Cpath d='M-20 260 Q 100 200 200 260 T 420 260'/%3E%3Cpath d='M-20 320 Q 100 260 200 320 T 420 320'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 700px;
-  opacity: .6;
-  pointer-events:none;
-}
 .hero-inner{ position:relative; max-width: 680px; }
 .hero h1{ color: var(--ink); }
 .hero .lede{
@@ -218,9 +214,12 @@ li p, .eyebrow, .lede, .fine, blockquote p, .pull-quote, .price, .btn, summary, 
 }
 
 .btn{
-  display:inline-block;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
   font-weight:700;
   font-size: 1.05rem;
+  line-height: 1.2;
   text-decoration:none;
   padding: 1rem 2rem;
   border-radius: var(--radius);
@@ -306,18 +305,20 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 }
 
 .info-grid{
-  display:grid; gap:1rem; margin-top:1.5rem;
+  display:grid; gap:1.5rem; margin-top:1.75rem;
   grid-template-columns: 1fr;
 }
-@media (min-width:640px){ .info-grid{ grid-template-columns: repeat(2,1fr); } }
+@media (min-width:640px){ .info-grid{ grid-template-columns: repeat(2,1fr); gap:1.75rem 2rem; } }
 .info-item{
+  background: var(--paper-soft);
   border-left: 3px solid var(--coral);
-  padding-left: 1rem;
+  border-radius: 0 8px 8px 0;
+  padding: .9rem 1.2rem;
 }
 .info-item p{ text-align:left; }
 .info-item .label{
-  display:block; font-size:.8rem; text-transform:uppercase; letter-spacing:.05em;
-  opacity:.7; margin-bottom:.15rem;
+  display:block; font-size:.78rem; text-transform:uppercase; letter-spacing:.06em;
+  opacity:.6; margin-bottom:.3rem;
 }
 
 .guarantee{
@@ -392,12 +393,6 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
   position:relative;
   overflow:hidden;
 }
-.final-cta::before{
-  content:"";
-  position:absolute; inset:0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='300' viewBox='0 0 700 300'%3E%3Cg fill='none' stroke='%23E8A23D' stroke-opacity='0.12' stroke-width='1'%3E%3Cpath d='M-40 60 Q 150 0 350 60 T 740 60'/%3E%3Cpath d='M-40 150 Q 150 90 350 150 T 740 150'/%3E%3Cpath d='M-40 240 Q 150 180 350 240 T 740 240'/%3E%3C/g%3E%3C/svg%3E");
-  background-size:700px;
-}
 .final-cta h2{ color: var(--paper-soft); position:relative; }
 .final-cta p{ opacity:.9; max-width: 50ch; margin-inline:auto; position:relative; text-align:center; }
 .final-cta .btn-row{ justify-content:center; position:relative; }
@@ -410,22 +405,52 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 }
 .footer-logo-row{
   display:flex; align-items:center; gap:.75rem;
-  margin-bottom: .6rem;
+  margin-bottom: 1rem;
 }
-.footer-logo-row img{ height: 40px; width:auto; }
+.footer-logo-row img{ height: 72px; width:auto; }
 .site-footer .brand-line{
   font-family: var(--font-display);
   color: var(--paper-soft);
   font-size:1.15rem;
   margin:0;
 }
-.footer-grid{
-  display:grid; gap:1.5rem;
+.footer-tagline{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--mustard);
+  margin: 0 0 1.1rem;
+  max-width: 32ch;
 }
-@media (min-width:640px){ .footer-grid{ grid-template-columns: 1.2fr 1fr; align-items:start; } }
+.footer-nav-heading{
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  opacity: .65;
+  margin: 0 0 .8rem;
+}
+.footer-grid{
+  display:grid; gap:2rem;
+}
+@media (min-width:640px){ .footer-grid{ grid-template-columns: 1.3fr 1fr; align-items:start; } }
 .footer-grid p{ text-align:left; }
-.social-links{ display:flex; gap:1rem; margin-top:.8rem; list-style:none; padding:0; }
-.social-links a{ text-decoration:none; border-bottom:1px solid var(--line-dark); }
+.footer-grid nav ul{
+  list-style:none; margin:0; padding:0;
+  display:grid; gap:.65rem;
+}
+.footer-grid nav a{ text-decoration:none; opacity:.9; }
+.footer-grid nav a:hover{ opacity:1; text-decoration:underline; }
+.social-links{ display:flex; gap:.7rem; margin-top:0; list-style:none; padding:0; }
+.social-links a{
+  display:flex; align-items:center; justify-content:center;
+  width:38px; height:38px;
+  border-radius:50%;
+  border:1px solid var(--line-dark);
+  transition: background .15s ease;
+}
+.social-links a:hover{ background: rgba(255,251,242,.1); }
+.social-links svg{ width:18px; height:18px; fill:currentColor; }
 .legal{
   border-top:1px solid var(--line-dark);
   margin-top:2rem; padding-top:1.2rem;
@@ -454,7 +479,7 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 }
 
 .brand-logo-img{
-  height: 76px;
+  height: 92px;
   width: auto;
   display: block;
 }
@@ -466,15 +491,18 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 }
 .badge-sm{
   max-width: 300px;
+  margin-inline: auto;
 }
 .badge-row{
   display:flex;
   justify-content:center;
   margin-bottom: 1rem;
 }
-.badge-row.left{ justify-content:flex-start; }
-.hero .badge-row{ justify-content:flex-start; margin-bottom: 1.5rem; }
+.badge-row.left{ justify-content:center; }
+.hero .badge-row{ justify-content:center; margin-bottom: 1.5rem; }
 .hero-inner .badge{ max-width: 440px; }
+.hero-inner{ text-align:center; margin-inline:auto; }
+.hero .lede, .hero .fine{ text-align:center; margin-inline:auto; }
 .footer-badge{
   display:inline-block;
   vertical-align: middle;
@@ -485,9 +513,10 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 
 .portrait-float{
   display: block;
-  width: 200px;
-  aspect-ratio: 680 / 906;
+  width: 170px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: 50% 12%;
   border-radius: var(--radius);
   border: 3px solid var(--mustard);
   margin: 0 auto 1.5rem;
@@ -495,7 +524,7 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 @media (min-width: 720px){
   .portrait-float{
     float: left;
-    width: 240px;
+    width: 200px;
     margin: .3rem 2rem 1rem 0;
     shape-outside: margin-box;
   }
@@ -532,13 +561,15 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 }
 
 .nature-motif{
-  height: 140px;
-  border-radius: var(--radius);
-  margin-bottom: 1.5rem;
+  height: 170px;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  margin-bottom: 2rem;
   background-color: var(--tint);
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='140' viewBox='0 0 600 140'%3E%3Cg fill='none' stroke='%233A2E22' stroke-opacity='0.55' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M40 140 L40 60 M25 75 L40 60 L55 78 M20 95 L40 78 L60 98'/%3E%3Cpath d='M110 140 L110 40 M90 60 L110 40 L130 62 M85 85 L110 62 L135 88 M82 110 L110 88 L138 112'/%3E%3Cpath d='M190 140 L190 70 M175 85 L190 70 L205 87'/%3E%3Cpath d='M320 140 L320 45 M300 65 L320 45 L340 67 M296 92 L320 67 L344 94'/%3E%3Cpath d='M420 140 L420 65 M405 80 L420 65 L435 82'/%3E%3Cpath d='M500 140 L500 38 M480 58 L500 38 L520 60 M476 86 L500 60 L524 88 M474 112 L500 88 L526 114'/%3E%3Cpath d='M560 140 L560 75 M546 90 L560 75 L574 92'/%3E%3C/g%3E%3Cg fill='%23B84325' fill-opacity='0.5'%3E%3Ccircle cx='40' cy='55' r='3'/%3E%3Ccircle cx='110' cy='36' r='3'/%3E%3Ccircle cx='320' cy='41' r='3'/%3E%3Ccircle cx='500' cy='34' r='3'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center bottom;
-  background-size: cover;
+  background-size: 600px 170px;
 }
