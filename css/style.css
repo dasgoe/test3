@@ -21,7 +21,9 @@
   /* kleur — accenten */
   --coral:      #B84E24;
   --coral-light:#E8734A;
-  --mustard:    #F0C94E;
+  --mustard:    #F0C94E; /* WAARSCHUWING: 1.48:1 contrast op --paper. Enkel als achtergrond
+                             gebruiken met donkere tekst erop (--ink/--deep), NOOIT als
+                             directe tekstkleur op een lichte achtergrond. */
   --mustard-text:#8C6A0E;
 
   /* kleur — enige overgebleven donkere vlak: footer/slot-CTA */
@@ -30,8 +32,10 @@
   --line-soft:  rgba(61,74,53,.14);
   --line-dark:  rgba(251,246,234,.18);
 
-  /* type */
-  --font-display: 'Fraunces', Georgia, serif;
+  /* type — systeemfont-stack, GEEN Google Fonts meer.
+     Verwijdert 4 netwerkverzoeken per pagina (preconnect x2, font-css,
+     woff2-bestanden) en elk risico op font-swap/layout shift. */
+  --font-display: Georgia, 'Iowan Old Style', Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
   /* schaal */
@@ -545,6 +549,21 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
   clip: rect(0,0,0,0);
   white-space: nowrap;
   border: 0;
+}
+
+/* echte, zichtbare kop naast een badge -- klein en ingetogen gehouden
+   zodat de bubbel het dominante visuele element blijft, maar wél
+   leesbaar voor mensen en crawlers (i.p.v. volledig verborgen sr-only) */
+.caption-visible{
+  display:block;
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color: var(--ink);
+  opacity:.55;
+  text-align:center;
+  margin:.5rem 0 1.5rem;
 }
 
 .pull-quote{

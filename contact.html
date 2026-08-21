@@ -11,10 +11,6 @@
 <meta property="og:description" content="Une question ? Écris-moi.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dasgoe.be/contact.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&display=swap"></noscript>
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -62,7 +58,7 @@
   <section class="hero" style="padding-block: clamp(2.5rem,4vw,4rem);">
     <div class="wrap hero-inner">
       <div class="badge-row left"><img src="images/badges/badge-contact-ink.png" width="520" height="333" alt="Contact" class="badge"></div>
-      <p class="eyebrow sr-only">Das Goe — Contact</p>
+      <p class="caption-visible">Das Goe — Contact</p>
       <h1>Une question&nbsp;? Écris-moi&nbsp;!</h1>
     </div>
   </section>
@@ -70,15 +66,21 @@
   <section class="section-paper">
     <div class="wrap">
       <!--
-        Formulier gebouwd voor Netlify Forms (no-backend). Bij deploy op Netlify
-        wordt dit formulier automatisch gedetecteerd dankzij data-netlify="true".
-        Werkt op elk ander platform ook als gewoon HTML-formulier — koppel dan
-        zelf een form-endpoint (bv. Formspree) via het action-attribuut.
+        FORMULIER VIA FORMSPREE (tijdelijk, zolang Netlify niet gebruikt wordt).
+        Voordeel: info@dasgoe.be staat NERGENS in deze broncode -- Formspree
+        houdt het adres enkel in hun eigen dashboard, onzichtbaar voor spam-
+        bots die de site scrapen.
+        ACTIE VEREIST: vervang VUL_HIER_JE_FORMSPREE_ID_IN hieronder door je
+        echte Formspree-endpoint. Zie SOP in het bijgeleverde antwoord.
+        Wil je later teruggaan naar Netlify Forms: action terug naar "" zetten,
+        method="POST" data-netlify="true" toevoegen, form-name hidden field
+        terugzetten (zie git-historiek van dit bestand).
       -->
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-        <input type="hidden" name="form-name" value="contact">
-        <p class="hidden" style="display:none;">
-          <label>Ne pas remplir si vous êtes humain&nbsp;: <input name="bot-field"></label>
+      <form action="https://formspree.io/f/VUL_HIER_JE_FORMSPREE_ID_IN" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="https://dasgoe.be/merci.html">
+        <input type="hidden" name="_subject" value="Nouveau message via dasgoe.be">
+        <p style="display:none;">
+          <label>Ne pas remplir si vous êtes humain&nbsp;: <input name="_gotcha"></label>
         </p>
         <div>
           <label for="name">Nom *</label>
@@ -99,7 +101,6 @@
 
   <section class="section-dark" id="mentions">
     <div class="wrap" style="max-width:60ch;">
-      <div class="footer-logo-row"><img src="images/badges/logo-das-goe-ink.png" width="700" height="700" alt="" style="height:44px;width:auto;"><p class="brand-line sr-only" style="font-family:var(--font-display); font-size:1.3rem;">Das Goe</p></div>
       <p>L'Anti-Méthode Néerlandaise — [EENMANSZAAK, coordonnées complètes en cours d'enregistrement].</p>
       <div class="btn-row">
         <a href="mentions-legales.html" class="btn btn-primary">Mentions légales</a>
