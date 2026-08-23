@@ -23,15 +23,28 @@ robots.txt / sitemap.xml → 8 pagina's
 ## Kleurenschema C — "Zonnig & toegankelijk"
 
 Volledig herzien t.o.v. het vorige bos/ember-palet. Contrastverhoudingen berekend
-en getoetst aan WCAG:
+en getoetst aan WCAG.
+
+**Bijgewerkt 23/08/2026**: onderstaande tabel gebruikte tot deze update nog de
+hex-waarden van een vorige paletronde (ink #3A2E22, paper #FFFBF2, coral #B84325,
+mustard #E8A23D) — niet meer gelijk aan de huidige tokens in `style.css`. Tabel
+herberekend tegen de actuele waarden:
 
 | Combinatie | Contrast | Norm |
 |---|---|---|
-| ink #3A2E22 op paper #FFFBF2 | 12,8:1 | AAA (7:1) ✓ |
-| wit op coral-knop #B84325 | 5,3:1 | AA (4,5:1) ✓ |
-| coral-light #E2603A, grote tekst | 3,4:1 | AA grote tekst (3:1) ✓ |
-| ink op mustard-knop #E8A23D | 6,1:1 | AA ✓ |
-| paper op donker voetblok #3A2418 | 14,1:1 | AAA ✓ |
+| ink #3D4A35 op paper #FBF6EA | 8,73:1 | AAA (7:1) ✓ |
+| paper-soft #FFFDF6 op coral-knop #B84E24 | 4,97:1 | AA (4,5:1) ✓ |
+| ink #3D4A35 op mustard-knop #F0C94E | 5,91:1 | AA ✓ |
+| paper-soft #FFFDF6 op deep #2A3324 (footer/final-cta) | 12,92:1 | AAA ✓ |
+| mustard-text #8C6A0E op paper #FBF6EA | 4,66:1 | AA ✓ |
+| coral-light #E8734A, grote tekst, op paper #FBF6EA | 2,79:1 | ✗ faalt zelfs AA grote tekst (3:1) |
+
+**Gevonden en gefixt bij deze update**: `.eyebrow` gebruikte standaard `--coral-light`
+als tekstkleur (2,79:1, faalt) — de twee enige plekken waar dit element voorkomt
+hadden dat al stilzwijgend overschreven naar `--mustard-text` via een inline style.
+Dat is nu de nieuwe standaardwaarde in `style.css` zelf, en de overbodige inline
+overrides zijn verwijderd uit `cours-en-ligne.html` en `qui-quoi.html`. `--coral-light`
+blijft bruikbaar, maar niet als directe tekstkleur op `--paper`.
 
 **Enige overgebleven donkere vlak: de footer en de slot-CTA** (`--deep`, warm
 espresso-bruin — niet langer het koude zwartgroen van de vorige versie). Hero's
@@ -87,6 +100,19 @@ SVG-tekening, dennenbomen) op de twee gevraagde plekken.
    ik ze (comprimeren, juiste formaat, `alt`-tekst) zoals bij Erika's portret.
 2. Koop een licentie bij een stockfoto-dienst (bv. Unsplash+, Adobe Stock) en lever
    die aan — dan bouw ik ze in.
+
+## Bijgewerkt 23/08/2026 — alt-tekst en contrastfix
+
+1. **35 van de 41 afbeeldingen hadden `alt=""`.** Correct voor decoratieve logo's
+   met een aangrenzende (zichtbare of `sr-only`) tekst die hetzelfde zegt — die zijn
+   ongemoeid gelaten (nav-logo, footer-logo, hero-logo op index/qui-quoi). Voor de
+   9 content-badges die een eigen boodschap dragen (bv. "J'ose enfin parler
+   néerlandais", "Goe babbelen") ontbrak die tekst-alternatief volledig — voor
+   zowel schermlezers als de AI-crawlers die `robots.txt` expliciet toelaat
+   (GPTBot, ClaudeBot, PerplexityBot e.a.) was die inhoud onzichtbaar. Alt-tekst
+   ingevuld met de letterlijke tekst van elke badge, consistent met het patroon
+   dat al bestond voor "Tarifs", "Contact", "Guide 80/20", "Balade en néerlandais".
+2. **`.eyebrow`-contrastfout**: zie hierboven — gefixt aan de bron in `style.css`.
 
 ## Nog openstaand — wachtend op input van jou
 

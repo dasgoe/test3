@@ -91,7 +91,7 @@ li p, .eyebrow, .lede, .fine, blockquote p, .pull-quote, .price, .btn, summary, 
   font-style: italic;
   font-weight: 500;
   font-size: var(--step-1);
-  color: var(--coral-light);
+  color: var(--mustard-text);
   margin-bottom: .4em;
 }
 .wrap{
