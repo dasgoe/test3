@@ -517,10 +517,10 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 
 .portrait-float{
   display: block;
-  width: 170px;
-  aspect-ratio: 4 / 5;
+  width: 150px;
+  aspect-ratio: 680 / 906;
   object-fit: cover;
-  object-position: 50% 12%;
+  object-position: 50% 0%;
   border-radius: var(--radius);
   border: 3px solid var(--mustard);
   margin: 0 auto 1.5rem;
@@ -528,7 +528,7 @@ section{ padding-block: clamp(3rem, 5vw, 5rem); }
 @media (min-width: 720px){
   .portrait-float{
     float: left;
-    width: 200px;
+    width: 180px;
     margin: .3rem 2rem 1rem 0;
     shape-outside: margin-box;
   }
